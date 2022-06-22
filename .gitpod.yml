@@ -1,0 +1,16 @@
+checkoutLocation: "code"
+
+# Ports to expose on workspace startup
+ports:
+  - name: web-app
+    description: Symfony Application running
+    port: 8000
+    onOpen: open-preview
+    visibility: private # or: public
+
+# Commands for execution
+tasks:
+  - name: Initialize workspace
+    before: ls -las
+    command: symfony server:start
+    openMode: split-right #OR: split-left, tab-after, tab-before
