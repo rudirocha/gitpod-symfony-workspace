@@ -1,16 +1,17 @@
-checkoutLocation: "code"
+checkoutLocation: "code" #OR: replace with . if your code will be at the workspace folder
 
 # Ports to expose on workspace startup
 ports:
   - name: web-app
     description: Symfony Application running
     port: 8000
-    onOpen: open-preview
-    visibility: private # or: public
+    onOpen: open-browser # OR: open-preview, notify, ignore
+    visibility: private # OR: public
 
 # Commands for execution
 tasks:
   - name: Initialize workspace
-    before: ls -las
-    command: symfony server:start
+    before: echo "executing before"
+    init: echo "executing init"
+    command: echo "executing command"
     openMode: split-right #OR: split-left, tab-after, tab-before
