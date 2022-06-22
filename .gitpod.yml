@@ -11,7 +11,7 @@ ports:
 # Commands for execution
 tasks:
   - name: Initialize workspace
-    before: echo "executing before"
+    before: sh ./bash/initial-setup.sh
     init: echo "executing init"
     command: echo "executing command"
     openMode: split-right #OR: split-left, tab-after, tab-before
