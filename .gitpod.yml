@@ -1,4 +1,4 @@
-checkoutLocation: "." #OR: replace with . if your code will be at the workspace folder
+checkoutLocation: "." #OR: replace with another folder name
 
 # Ports to expose on workspace startup
 ports:
