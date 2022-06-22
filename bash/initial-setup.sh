@@ -1,1 +1,1 @@
-./install-symfony-cli.sh
+sh install-symfony-cli.sh
