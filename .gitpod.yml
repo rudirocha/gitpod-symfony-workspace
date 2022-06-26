@@ -1,7 +1,7 @@
 checkoutLocation: "." #OR: replace with another folder name
 
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod.postgres.Dockerfile
 
 # Ports to expose on workspace startup
 ports:
