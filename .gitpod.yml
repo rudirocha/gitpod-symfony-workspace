@@ -1,5 +1,8 @@
 checkoutLocation: "." #OR: replace with another folder name
 
+image:
+  file: .gitpod.Dockerfile
+
 # Ports to expose on workspace startup
 ports:
   - name: web-app
