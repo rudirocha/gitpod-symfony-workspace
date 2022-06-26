@@ -1,7 +1,7 @@
 checkoutLocation: "." #OR: replace with another folder name
 
 image:
-  file: .gitpod.postgres.Dockerfile
+  file: .gitpod.postgres.Dockerfile # OR: .gitpod.mysql.Dockerfile
 
 # Ports to expose on workspace startup
 ports:
