@@ -1,3 +1,5 @@
 .cargo
 .gitpod
+mysql
+.pgsql
 .vscode-remote
