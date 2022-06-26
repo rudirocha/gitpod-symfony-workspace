@@ -10,6 +10,18 @@ ports:
     port: 8000
     onOpen: open-browser # OR: open-preview, notify, ignore
     visibility: private # OR: public
+  - name: mysql-default
+    description: mysql default port
+    port: 3306
+    visibility: private
+  - name: mysql-secure-default
+    description: mysql secure port
+    port: 33060
+    visibility: private
+  - name: postgres-default
+    description: postgres port
+    port: 5432
+    visibility: private
 
 # Commands for execution
 tasks:
